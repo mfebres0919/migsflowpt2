@@ -60,7 +60,7 @@ nav svg {
     display: none;
 }
 .open-sidebar-button, .close-sidebar-button {
-        display: none;
+    display: none;
 }
 @media (max-width: 450px) {
     .links-container {
@@ -111,11 +111,15 @@ nav svg {
 }
 
 
+
+/* =======CAROUSEL======== */
+
 .carousel {
     width: 100%;
     border: 1.3px dashed rgb(0, 0, 0);
     display: flex;
     overflow-x: auto;
+    gap: 1em;
 }
 .carousel::-webkit-scrollbar {
     display: none;
