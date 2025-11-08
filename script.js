@@ -45,4 +45,20 @@
         }
         item.addEventListener('click', onClick)
         }
-                                
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card1");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active"); // add color when visible
+      } else {
+        entry.target.classList.remove("active"); // remove when not visible
+      }
+    });
+  }, { threshold: 0.5 }); // trigger when 50% of card is visible
+
+  cards.forEach(card => observer.observe(card));
+});

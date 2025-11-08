@@ -862,7 +862,7 @@ p {
 .carousel-track2 {
   display: inline-block; /* Allows items to sit side-by-side */
   animation: slide 15s linear infinite; /* Adjust duration and timing */
-  background-color:#f2fa00;
+  background-color:#00fa2e;
 }
 
 .carousel-item2 {
@@ -1023,11 +1023,11 @@ padding-top: 1rem;
 
 .card1 {
   position: relative;
-  overflow: hidden; /* hides the overlay outside the card */
+  overflow: hidden;
   border: 1px solid black;
   padding: 1rem;
   border-radius: 10px;
-  background: #ffffff;
+  background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
 }
@@ -1040,16 +1040,15 @@ padding-top: 1rem;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fbff00; /* the hover color */
+  background-color: #fcff4b; /* the hover color */
   transition: top 0.5s ease;
   z-index: -1;
 }
 
 /* when hovered, slide the overlay down */
-.card1:hover::before {
+.card1.active::before {
   top: 0;
 }
-
 /* smooth text color transition */
 .card1,
 .card1 h1,
@@ -1188,6 +1187,10 @@ dotlottie-wc {
 
 .span-blue {
   color: rgb(0, 72, 172);
+}
+
+.span-red {
+  color: rgb(131, 0, 0);
 }
 
 .span-services {
