@@ -135,7 +135,7 @@ li {
     transform: translateX(-50%);
     transition: transform 0.2s, border-radius 0.3s ease-in-out;
   }
-  #cs-navigation.cs-active:before {
+  #cs-navigation:before {
     transform: translateX(-50%) scale(1.03);
   }
   #cs-navigation.cs-active .cs-toggle {
@@ -272,7 +272,7 @@ li {
     width: 100%;
     height: auto;
     padding-bottom: 2.4em;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 0 0 1.5rem 1.5rem;
     position: absolute;
     top: 85%;
@@ -808,7 +808,9 @@ li {
   }
 }
                                 
-
+.cs-active {
+  color: white;
+}
 
 .cs-logo h1 {
   color: rgb(255, 255, 255);
