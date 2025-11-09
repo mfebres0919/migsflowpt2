@@ -1189,11 +1189,6 @@ padding-top: 1rem;
   align-items: center;
 }
 
-
-dotlottie-wc {
-  padding-bottom: 2rem;
-}
-
 .image-business {
   padding-bottom: 2rem;
 }
@@ -1745,8 +1740,8 @@ dotlottie-wc {
 @media (min-width: 900px) and (max-width: 1279px) {
 
   * p {
-    font-size: 18px !important;
-    line-height: 3rem;
+    font-size: 12px !important;
+    line-height: 1rem;
   }
 
 
@@ -1773,24 +1768,30 @@ dotlottie-wc {
     max-width: 500px; /* removes the 420px cap that was causing overflow */
   }
 
+  .card1 h1 {
+    font-size: 1.05rem;
+  }
+
   .card1 h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 2rem;
   }
 
   .card1 p {
     padding-bottom: 3rem;
+    line-height: 2rem;
   }
 
   .business-content {
     margin-top: 3rem;
+    max-width: 700px;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
 
   .business-content h1 {
-    font-size: 2.4rem;
+    font-size: 1.05rem;
     line-height: 4rem;
   }
 
@@ -1803,14 +1804,14 @@ dotlottie-wc {
   }
 
   .world-animation {
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
   }
 
 
   .rocket-animation {
-    width: 900px;
-    height: 900px;
+    width: 400px;
+    height: 400px;
   }
 
   .business-inner {
@@ -1822,13 +1823,7 @@ dotlottie-wc {
 
   .btn-business {
     margin-top: 4rem;
-    margin-bottom: 4rem;
   }
-
-  .btn-2, .btn-1 {
-    font-size: 1.3rem;
-  }
-
   .experiences-content {
     max-width: 660px;
   }
@@ -1848,20 +1843,26 @@ dotlottie-wc {
   }
 
   .section2-content h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-    padding-top: 5rem;
+    font-size: 1.2rem;
+    padding: 0;
   }
 
   .experiences-content {
-    max-width: 900px;
+    max-width: 700px;
     margin-top: 3rem;
   }
 
   .experiences-content h1 {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     line-height: 4rem;
   }
+
+  .section2-content {
+      margin-top: 2rem;
+
+  }
+  
+
 }
 
 /* ========== Large Desktops / Monitors ========== */
