@@ -1190,3 +1190,86 @@ dotlottie-wc {
 .span-services {
   font-style: italic;
 }
+
+
+
+/* ========PRICES SECTION======= */
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section2-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============= SECTION 2 ANIMATIONS ============= */
+.section2 {
+  text-align: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+.section2-content h1 {
+  font-size: 2.5rem;
+  color: #252525;
+  opacity: 0;
+  animation: flyIn 1s ease forwards, bounce 3s ease-in-out infinite 1.5s;
+}
+
+/* Delay the second h1 slightly */
+.section2-content h1:nth-of-type(2) {
+  animation-delay: 1.2s, 2s;
+}
+
+/* Paragraph styling and fade-in */
+.section2-content p {
+  margin-top: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1.2s;
+  font-size: 15px;
+}
+
+/* Rocket spacing */
+.rocket {
+  margin: 1rem 0;
+}
+
+/* ============= KEYFRAMES ============= */
+
+/* Text flies in from bottom */
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle continuous bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Fade-in for paragraph */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
