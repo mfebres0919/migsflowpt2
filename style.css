@@ -26,6 +26,11 @@ li {
   line-height: 2rem;
 }
 
+a {
+    font-family: "Google Sans Code", monospace;
+
+}
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #dark-mode-toggle .cs-sun {
@@ -590,7 +595,7 @@ li {
     box-sizing: border-box;
     /* 12px - 24px */
     padding: clamp(0.75rem, 2vw, 1.5rem) 0;
-    background-color: #fff;
+    background-color: #000000;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
@@ -603,6 +608,8 @@ li {
     transform: translateX(-50%);
     transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
   }
+
+
   #cs-navigation .cs-container {
     width: 100%;
     max-width: 90rem;
@@ -615,6 +622,12 @@ li {
     align-items: center;
     gap: 1.5rem;
   }
+
+  .cs-container {
+    color: white;
+  }
+
+
   #cs-navigation .cs-toggle {
     display: none;
   }
@@ -831,6 +844,8 @@ li {
   display: inline-block; /* Allows items to sit side-by-side */
   animation: slide 15s linear infinite; /* Adjust duration and timing */
   background-color: black;
+  padding: 1.5rem;
+
 }
 
 .carousel-item {
@@ -869,6 +884,8 @@ li {
   display: inline-block; /* Allows items to sit side-by-side */
   animation: slide 15s linear infinite; /* Adjust duration and timing */
   background-color:#00fa2e;
+  padding: 1.5rem;
+
 }
 
 .carousel-item2 {
@@ -1045,20 +1062,22 @@ padding-top: 1rem;
 .cards-section {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   gap: 2rem;
+  margin: 1rem;
+
 }
 
 .card1 {
   position: relative;
   overflow: hidden;
   border: 1px solid black;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 10px;
   color: black;
   background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
+  margin: 1.2rem;
 }
 
 /* create the color overlay */
@@ -1109,13 +1128,6 @@ padding-top: 1rem;
   transition: all 1s ease-in-out;
 }
 
-/* Cards container */
-.cards-section {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  gap: 2rem;
-}
 
 /* Animate each card */
 .card1 {
@@ -1167,10 +1179,6 @@ padding-top: 1rem;
   align-items: center;
 }
 
-.business-content h1 {
-  font-size: 1.6rem;
-}
-
 
 dotlottie-wc {
   padding-bottom: 2rem;
@@ -1180,6 +1188,12 @@ dotlottie-wc {
   padding-bottom: 2rem;
 }
 
+
+  .world {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .btn-2 {
   text-decoration: none;
@@ -1192,6 +1206,7 @@ dotlottie-wc {
   display: inline-block;
   transition: all 0.3s ease;
   opacity: 0;
+  margin-bottom: 2rem;
 
   /* multiple animations */
   animation: 
@@ -1238,14 +1253,20 @@ dotlottie-wc {
 
 /* ========PRICES SECTION======= */
 
+.maintenance-section {
+  margin: 1rem;
+}
+
+
 .card3 {
   display: flex;
   flex-direction: column;
   text-align: left;
-  border: 3px solid rgb(219, 190, 0);
+  border: 3px solid rgb(0, 157, 219);
   background-color: rgb(24, 24, 24);
   padding: 1.5rem;
   border-radius: 10px;
+  margin: 1rem;
 
   /* drop shadow + transition for smooth lift */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
@@ -1303,32 +1324,29 @@ dotlottie-wc {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.landing-page-content {
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
 
 
 /* SECTION 2 ANIMATIONS */
 .section2 {
   text-align: center;
-  padding: 4rem 1rem;
   overflow: hidden;
 }
 
+.section2-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section2-content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #252525;
   opacity: 0;
+  padding: 1.2rem;
   animation: flyIn 1s ease forwards, bounce 3s ease-in-out infinite 1.5s;
 }
 
@@ -1344,6 +1362,7 @@ dotlottie-wc {
   animation: fadeIn 1s ease forwards;
   animation-delay: 1.2s;
   font-size: 15px;
+  margin-bottom: 2rem;
 }
 
 /* Rocket spacing */
@@ -1352,9 +1371,23 @@ dotlottie-wc {
 }
 
 
+/* ===MAINTENANCE CONTENT ==== */
+.maintenance-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5rem;
+  padding: 1.2rem;
 
+}
 
+.maintenance-content h1 {
+  font-size: 1.5rem;
+}
 
+ .card3 > h4 {
+  padding-bottom: 2rem;
+}
 
 
 
@@ -1398,4 +1431,188 @@ dotlottie-wc {
   padding-inline-start: 0rem; /* overrides browser default 40px */
   margin: 0; /* optional: remove top/bottom extra spacing */
   list-style-position: inside; /* optional: keeps bullets closer to text */
+}
+
+ .card3 {
+  width: 100%;
+  max-width: 420px;   /* keeps it from getting too wide on large screens */
+  min-width: 0;       /* allows shrinking on mobile */
+  box-sizing: border-box;
+  margin: 0 auto;     /* centers it */
+  overflow-x: hidden; /* safety */
+}
+
+
+.card1 {
+  width: 100%;
+  max-width: 420px;   /* keeps it from getting too wide on large screens */
+  min-width: 0;       /* allows shrinking on mobile */
+  box-sizing: border-box;
+  margin: 0 auto;     /* centers it */
+  overflow-x: hidden; /* safety */
+}
+
+
+
+
+
+.experiences-content,
+.business-content,
+.section2-content,
+.landing-page-content,
+.maintenance-content {
+  width: 100%;
+  max-width: 600px;   /* keeps it from getting too wide on large screens */
+  min-width: 0;       /* allows shrinking on mobile */
+  box-sizing: border-box;
+  margin: 0 auto;     /* centers it */
+  overflow-x: hidden; /* safety */
+
+}
+
+
+
+
+
+
+
+
+
+/* ============MEDIA QUERIES============ */
+
+
+
+/* ========== Tablets (Portrait + Small Landscape) ========== */
+@media (min-width: 605px) and (max-width: 899px) {
+  
+  .hero-content h1 {
+    max-width: 600px;
+  }
+  
+  
+  .cards-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem;
+  }
+
+  .card1,
+  .card3 {
+    flex: 1 1 45%;   /* allows them to shrink to ~45% each */
+    max-width: 500px; /* removes the 420px cap that was causing overflow */
+  }
+
+  .business-content {
+    margin-top: 3rem;
+    text-align: left;
+    margin-left: 3rem;
+  }
+
+
+  .world {
+    margin-top: 6%;
+  }
+
+  .business-inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-business {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+
+  .experiences-content {
+    max-width: 660px;
+  }
+
+
+}
+
+
+/* ========== Laptops / Small Desktops ========== */
+@media (min-width: 900px) and (max-width: 1279px) {
+
+  p {
+    font-size: 15px !important;
+  }
+
+
+    .hero-content h1 {
+    max-width: 600px;
+    margin-top: 8rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  
+  
+  .cards-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem;
+  }
+
+  .card1,
+  .card3 {
+    flex: 1 1 45%;   /* allows them to shrink to ~45% each */
+    max-width: 500px; /* removes the 420px cap that was causing overflow */
+  }
+
+  .business-content {
+    margin-top: 3rem;
+    text-align: left;
+    margin-left: 3rem;
+  }
+
+  .business-content h1 {
+    font-size: 4rem;
+  }
+
+  .business-contnet p {
+    font-size: 20px !important;
+  }
+
+  .world {
+    margin-top: 6%;
+  }
+
+  .business-inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-business {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+
+  .experiences-content {
+    max-width: 660px;
+  }
+
+  .maintenance-content {
+    max-width: 800px;
+  }
+
+
+  .cards-section {
+    padding: 2rem;
+  }
+
+
+}
+
+
+/* ========== Large Desktops / Monitors ========== */
+@media (min-width: 1280px) {
+  /* Styles for large screens and monitors go here */
 }
