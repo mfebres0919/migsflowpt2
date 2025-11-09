@@ -1745,7 +1745,7 @@ dotlottie-wc {
 @media (min-width: 900px) and (max-width: 1279px) {
 
   * p {
-    font-size: 23px !important;
+    font-size: 18px !important;
     line-height: 3rem;
   }
 
@@ -2009,5 +2009,8 @@ dotlottie-wc {
     flex-direction: row;
   }
 
+  .contact-content p {
+    font-size: 12px;
+  }
 
 }
