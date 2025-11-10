@@ -1071,9 +1071,8 @@ padding-top: 1rem;
 .cards-section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   margin: 1rem;
-
+  gap: 1.4rem;
 }
 
 .card1 {
@@ -1186,7 +1185,7 @@ padding-top: 1rem;
 .business-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .image-business {
@@ -1211,6 +1210,7 @@ padding-top: 1rem;
   display: inline-block;
   transition: all 0.3s ease;
   opacity: 0;
+  margin-top: 1.2rem;
   margin-bottom: 2rem;
 
   /* multiple animations */
@@ -1472,6 +1472,14 @@ padding-top: 1rem;
     height: 400px;
   }
 
+
+  .world-animation {
+    width: 400px;
+    height: 400px;
+  }
+
+
+  
 
 
 
@@ -1783,11 +1791,14 @@ padding-top: 1rem;
   }
 
   .business-content {
+    display: flex;
+    flex-direction: column;
     margin-top: 3rem;
     max-width: 700px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: left !important;
+
   }
 
   .business-content h1 {
@@ -1797,6 +1808,12 @@ padding-top: 1rem;
 
   .business-contnet p {
     font-size: 20px !important;
+  }
+
+
+  .business-wrapper {
+    display: flex;
+    flex-direction: row;
   }
 
   .world {
@@ -1861,6 +1878,11 @@ padding-top: 1rem;
       margin-top: 2rem;
 
   }
+
+  .contact-content {
+    text-align: center;
+    max-width: 800px;
+  }
   
 
 }
@@ -1870,7 +1892,7 @@ padding-top: 1rem;
 
 
   * p {
-    font-size: 23px !important;
+    font-size: 13px !important;
     line-height: 3rem;
   }
 
@@ -1888,18 +1910,16 @@ padding-top: 1rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
-    margin: 1rem;
   }
 
   .card1,
   .card3 {
-    flex: 1 1 45%;   /* allows them to shrink to ~45% each */
-    max-width: 500px; /* removes the 420px cap that was causing overflow */
+    flex: 1 1 22%;   /* allows them to shrink to ~45% each */
+    max-width: 530px; /* removes the 420px cap that was causing overflow */
   }
 
   .card1 h4 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-bottom: 2rem;
   }
 
@@ -1943,11 +1963,11 @@ padding-top: 1rem;
     text-align: left;
   }
 
-  .business-inner {
+  .business-wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     
   }
 
@@ -1960,10 +1980,9 @@ padding-top: 1rem;
   }
 
 
-
-
-  .btn-2, .btn-1 {
-    font-size: 1.3rem;
+  .btn-2, .btn-1, .btn-3 {
+    font-size: 14px;
+    max-width: 200px;
   }
 
   .experiences-content {
